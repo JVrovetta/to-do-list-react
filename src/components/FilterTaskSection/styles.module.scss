@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 15px 0;
+  border-bottom: 1px solid #555;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  button {
+    margin-right: 5px;
+  }
+
+  .filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    div {
+      flex: 1 1 0;
+    }
+  }
+}

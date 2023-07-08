@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-left: 5px solid transparent;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+
+  &.Trabalho {
+    border-color: #ffb3ba;
+  }
+
+  &.Pessoal {
+    border-color: #baffc9;
+  }
+
+  &.Estudo {
+    border-color: #bae1ff;
+  }
+
+  &.completed {
+    opacity: .6;
+
+    .taskContent {
+
+      h3,
+      p,
+      small {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  div {
+    flex: 1 1 0;
+  }
+
+  .taskContent {
+    min-width: 200px;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    small {
+      font-size: 11px;
+    }
+  }
+
+  .taskControls {
+    text-align: right;
+    max-width: 125px;
+    min-width: fit-content;
+
+    button {
+      &:nth-child(2) {
+        margin-left: 5px;
+      }
+    }
+  }
+}
